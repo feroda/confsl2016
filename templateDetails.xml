@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5.1" type="template">
+    <name>confsl2016-beauty</name>
+    <creationDate>2016-06-01</creationDate>
+    <author>Roberto `madbob` Guido and joomla theme by Luca `fero` Ferroni</author>
+    <authorEmail>boh@boh.it</authorEmail>
+    <authorUrl>http://www.madbob.org</authorUrl>
+    <copyright>Madbob 2016</copyright>
+    <license>GNU/AGPL v3</license>
+    <version>0.1</version>
+    <description>CONFSL 2016 beautiful landing page</description>
+    <files>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>imgs</folder>
+        <folder>css</folder>
+    </files>
+    <positions>
+        <position>breadcrumb</position>
+        <position>left</position>
+        <position>right</position>
+        <position>top</position>
+        <position>user1</position>
+        <position>user2</position>
+        <position>user3</position>
+        <position>user4</position>
+        <position>footer</position>
+    </positions>
+</extension>
