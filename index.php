@@ -48,6 +48,18 @@ $base_url = $this->baseurl."/templates/".$this->template;
             <li>
                 <a href="#sponsors" onclick = $("#menu-close").click(); >Credits</a>
             </li>
+            <li>
+                <a href="<?php echo $this->baseurl; ?>/paper-submission">Paper submission</a> 
+            </li>
+            <li>
+                <a href="<?php echo $this->baseurl; ?>/sponsorships">Come sponsorizzare</a> 
+            </li>
+            <li>
+                <a href="<?php echo $this->baseurl; ?>/past-editions">Edizioni passate</a> 
+            </li>
+            <li>
+                <a href="https://it.wikipedia.org/w/index.php?title=Conferenza_Italiana_sul_Software_Libero" target="_blank">CONFSL su Wikipedia</a> 
+            </li>
         </ul>
     </nav>
 
@@ -125,7 +137,8 @@ $base_url = $this->baseurl."/templates/".$this->template;
                 <div class="col-lg-12 text-center">
                 <p class="lead">
                     <strong>Industry</strong><br />
-                    <strong>Stati Generali dell'Innovazione<br></strong>FOIA, Open Data, Sw libero nella PA<br />
+                    <strong>Stati Generali dell'Innovazione</strong><br />
+                    <span class="small">FOIA, Open Data, Sw libero nella PA</span><br />
                     <strong>oPen Cyber Security</strong><br />
                     <strong>Dossier Scuola Libera</strong><br />
                     <strong>Digital Freedom Championship</strong><br />
