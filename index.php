@@ -317,9 +317,16 @@ $base_url = $this->baseurl."/templates/".$this->template;
                     <h2>Dove</h2>
                     <hr class="small">
                 </div>
+                <div class="col-lg-12 text-center">
+                    <p class="lead"><a href="http://www.unipa.it" target="_blank">Università degli Studi di Palermo</a></p>
+                </div>
+                
             </div>
         </div>
-        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=13.344955444335938%2C38.101443254266925%2C13.352036476135254%2C38.105200172562924&amp;layer=mapnik&amp;marker=38.10332173756254%2C13.348495960235596" style="border: 1px solid black"></iframe>
+        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://umap.openstreetmap.fr/it/map/confsl-2016_72737#15/38.1048/13.3490" style="border: 1px solid black"></iframe>
+        <div class="col-lg-12 text-center">
+            <p class="lead"><a href="<?php echo $this->baseurl; ?>/where">Vedi altre attrazioni a Palermo</a></p>
+        </div>
     </section>
     
     <br/>
