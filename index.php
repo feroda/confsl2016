@@ -114,12 +114,26 @@ $base_url = $this->baseurl."/templates/".$this->template;
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Programma</h2>
+                    <h2>Sessioni</h2>
                     <hr class="small">
                 </div>
 
                 <div class="col-lg-12 text-center">
-                    <p class="lead">Il programma è attualmente in fase di definizione e chiusura. Torna a visitare questo sito tra qualche giorno per maggiori dettagli.</p>
+                    <p class="lead"><a href="<?php echo $this->baseurl; ?>/programma">Vedi il programma completo</a></p>
+                </div>
+
+                <div class="col-lg-12 text-center">
+                <p class="lead">
+                    <strong>Industry</strong><br />
+                    <strong>Stati Generali dell'Innovazione<br></strong>FOIA, Open Data, Sw libero nella PA<br />
+                    <strong>oPen Cyber Security</strong><br />
+                    <strong>Dossier Scuola Libera</strong><br />
+                    <strong>Digital Freedom Championship</strong><br />
+                    <strong>GnuHealth.It</strong><br />
+                    <strong>LibreItalia</strong><br />
+                    <strong>Mozilla &amp; Wordpress</strong><br />
+                    <strong>ADI - Free Software for Scientific Research</strong><br />
+                    </p>
                 </div>
 
                 <!--
@@ -323,7 +337,9 @@ $base_url = $this->baseurl."/templates/".$this->template;
                 
             </div>
         </div>
-        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://umap.openstreetmap.fr/it/map/confsl-2016_72737#15/38.1048/13.3490" style="border: 1px solid black"></iframe>
+        <div class="col-lg-12 text-center">
+        <iframe width="90%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://umap.openstreetmap.fr/it/map/confsl-2016_72737#15/38.1048/13.3490" style="border: 1px solid black"></iframe>
+        </div>
         <div class="col-lg-12 text-center">
             <p class="lead"><a href="<?php echo $this->baseurl; ?>/where">Vedi altre attrazioni a Palermo</a></p>
         </div>
