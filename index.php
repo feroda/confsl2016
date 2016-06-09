@@ -117,6 +117,11 @@ $base_url = $this->baseurl."/templates/".$this->template;
                         <p>Presidente Onorario LibreItalia</p>
                     </div>
                     <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/aliprandi.jpg" class="img-responsive" /></p>
+                        <p>Simone Aliprandi</p>
+                        <p>Avvocato</p>
+                    </div>
+                    <div class="col-lg-3">
                         <p><img src="<?php echo $base_url; ?>/img/montegiove.jpg" class="img-responsive" /></p>
                         <p>Sonia Montegiove</p>
                         <p>Presidente LibreItalia</p>
