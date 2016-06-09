@@ -21,6 +21,8 @@ $base_url = $this->baseurl."/templates/".$this->template;
     <link href="<?php echo $base_url; ?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo $base_url; ?>/slick/slick-theme.css"/>
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -98,25 +100,52 @@ $base_url = $this->baseurl."/templates/".$this->template;
             </div>
 
             <div class="row">
-                <div class="col-lg-3">
-                    <p><img src="<?php echo $base_url; ?>/img/sullivan.jpg" class="img-responsive" /></p>
-                    <p>John Sullivan</p>
-                    <p>Direttore Esecutivo Free Software Foundation</p>
-                </div>
-                <div class="col-lg-3">
-                    <p><img src="<?php echo $base_url; ?>/img/rubini.jpg" class="img-responsive" /></p>
-                    <p>Alessandro Rubini</p>
-                    <p>Vice Presidente Free Software Foundation Europe</p>
-                </div>
-                <div class="col-lg-3">
-                    <p><img src="<?php echo $base_url; ?>/img/vignoli.jpg" class="img-responsive" /></p>
-                    <p>Italo Vignoli</p>
-                    <p>Presidente Onorario LibreItalia</p>
-                </div>
-                <div class="col-lg-3">
-                    <p><img src="<?php echo $base_url; ?>/img/aliprandi.jpg" class="img-responsive" /></p>
-                    <p>Simone Aliprandi</p>
-                    <p>Avvocato</p>
+                <div class="responsive-carousel">
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/sullivan.jpg" class="img-responsive" /></p>
+                        <p>John Sullivan</p>
+                        <p>Direttore Esecutivo Free Software Foundation</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/rubini.jpg" class="img-responsive" /></p>
+                        <p>Alessandro Rubini</p>
+                        <p>Vice Presidente Free Software Foundation Europe</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/vignoli.jpg" class="img-responsive" /></p>
+                        <p>Italo Vignoli</p>
+                        <p>Presidente Onorario LibreItalia</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/montegiove.jpg" class="img-responsive" /></p>
+                        <p>Sonia Montegiove</p>
+                        <p>Presidente LibreItalia</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/tiralongo.jpg" class="img-responsive" /></p>
+                        <p>Corrado Tiralongo</p>
+                        <p>Psicologo e councelor</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/sileo.jpg" class="img-responsive" /></p>
+                        <p>Gen. Camillo Sileo</p>
+                        <p>Coordinatore progetto LibreDifesa</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/chiodi.jpg" class="img-responsive" /></p>
+                        <p>Prof. Marchello Chiodi</p>
+                        <p>Scienze Statistiche - Università di Palermo</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/bassetti.jpg" class="img-responsive" /></p>
+                        <p>Nanni Bassetti</p>
+                        <p>Esperto in informatica forense</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p><img src="<?php echo $base_url; ?>/img/virgilio.jpg" class="img-responsive" /></p>
+                        <p>Vincenzo Virgilio</p>
+                        <p>Presidente Sputnix</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -457,6 +486,10 @@ $base_url = $this->baseurl."/templates/".$this->template;
 
     <script src="<?php echo $base_url; ?>/js/jquery.js"></script>
     <script src="<?php echo $base_url; ?>/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+
+    <script type="text/javascript" src="<?php echo $base_url; ?>/slick/slick.min.js"></script>
 
     <script>
     // Closes the sidebar menu
@@ -485,6 +518,43 @@ $base_url = $this->baseurl."/templates/".$this->template;
                     return false;
                 }
             }
+        });
+        $('.responsive-carousel').slick({
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                  slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                  slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
         });
     });
     </script>
