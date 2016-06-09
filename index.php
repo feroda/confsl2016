@@ -424,7 +424,7 @@ $base_url = $this->baseurl."/templates/".$this->template;
             </div>
 
             <div class="row icons">
-                <div class="col-lg-2 col-lg-offset-3">
+                <div class="col-lg-2">
                     <a href="http://www.befair.it/"><img class="img-sponsor" src="<?php echo $base_url; ?>/img/befair.png" /></a>
                 </div>
                 <div class="col-lg-2">
