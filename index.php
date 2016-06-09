@@ -42,15 +42,18 @@ $base_url = $this->baseurl."/templates/".$this->template;
                 <a href="#top" onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="#schedule" onclick = $("#menu-close").click(); >Programma</a>
+                <a href="#guests" onclick = $("#menu-close").click(); >Ospiti</a>
             </li>
             <li>
-                <a href="#map" onclick = $("#menu-close").click(); >Dove</a>
+                <a href="#schedule" onclick = $("#menu-close").click(); >Sessioni</a>
             </li>
+            <!-- <li>
+                <a href="#map" onclick = $("#menu-close").click(); >Dove</a>
+            </li> -->
             <li>
                 <a href="#sponsors" onclick = $("#menu-close").click(); >Credits</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="<?php echo $this->baseurl; ?>/paper-submission">Paper submission</a> 
             </li>
             <li>
@@ -61,7 +64,7 @@ $base_url = $this->baseurl."/templates/".$this->template;
             </li>
             <li>
                 <a href="https://it.wikipedia.org/w/index.php?title=Conferenza_Italiana_sul_Software_Libero" target="_blank">CONFSL su Wikipedia</a> 
-            </li>
+            </li> -->
         </ul>
     </nav>
 
@@ -164,9 +167,9 @@ $base_url = $this->baseurl."/templates/".$this->template;
                     <hr class="small">
                 </div>
 
-                <div class="col-lg-12 text-center">
+                <!-- <div class="col-lg-12 text-center">
                     <p class="lead"><a href="<?php echo $this->baseurl; ?>/programma">Vedi il programma completo</a></p>
-                </div>
+                </div> -->
 
                 <div class="col-lg-12 text-center">
                 <p class="lead">
@@ -357,21 +360,7 @@ $base_url = $this->baseurl."/templates/".$this->template;
         </div>
     </section>
 
-    <!--
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside>
-    -->
-
-    <section id="map" class="map">
+    <!-- <section id="map" class="map">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -391,8 +380,7 @@ $base_url = $this->baseurl."/templates/".$this->template;
             <p class="lead"><a href="<?php echo $this->baseurl; ?>/where">Vedi altre attrazioni a Palermo</a></p>
         </div>
     </section>
-    
-    <br/>
+    -->
     
     <section id="sponsors" class="map">
         <div class="container">
